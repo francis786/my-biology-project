@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cell Biology Visualization</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: bounceIn 1s ease-in-out;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 30px 20px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    section:nth-child(even) {
+      background-color: #eaf5f0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      cursor: zoom-in;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      animation: fadeIn 1s ease;
+    }
+
+    .dedication {
+      font-style: italic;
+      font-size: 16px;
+      color: #ff69b4;
+      margin-top: 10px;
+    }
+
+    .rubies {
+      font-size: 13px;
+      color: #c0c0c0;
+      margin-top: 8px;
+    }
+
+    ul {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cell Biology Visualization</h1>
+    <p>Explore the microscopic world of Bacteria, Viruses, Plant and Animal Cells</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#bacteria">Bacteria</a>
+    <a href="#virus">Virus</a>
+    <a href="#plant">Plant Cell</a>
+    <a href="#animal">Animal Cell</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>This project was created as an educational tool to learn about different types of cells and microorganisms.</p>
+  </section>
+
+  <section id="bacteria">
+    <h2>Bacteria</h2>
+    <img src="bacteria.jpg" alt="Bacteria Cell">
+    <p><strong>Types of Bacteria:</strong> Cocci, Bacilli, Spirilla, Vibrio, Spirochetes</p>
+    <p><strong>Advantages:</strong> Nitrogen fixation, digestion aid, fermentation</p>
+    <p><strong>Disadvantages:</strong> Can cause diseases, food spoilage</p>
+  </section>
+
+  <section id="virus">
+    <h2>Virus</h2>
+    <img src="virus.jpg" alt="Virus Image">
+    <p><strong>Types of Viruses:</strong> DNA viruses, RNA viruses, Retroviruses</p>
+    <p><strong>Advantages:</strong> Used in genetic engineering and vaccines</p>
+    <p><strong>Disadvantages:</strong> Cause infections like HIV, COVID-19</p>
+  </section>
+
+  <section id="plant">
+    <h2>Plant Cell</h2>
+    <img src="plantcell.jpg" alt="Plant Cell">
+    <p><strong>Organelles:</strong></p>
+    <ul>
+      <li><b>Cell Wall:</b> Provides structure</li>
+      <li><b>Chloroplast:</b> Site of photosynthesis</li>
+      <li><b>Vacuole:</b> Stores nutrients and waste</li>
+    </ul>
+  </section>
+
+  <section id="animal">
+    <h2>Animal Cell</h2>
+    <img src="animalcell.jpg" alt="Animal Cell">
+    <p><strong>Organelles:</strong></p>
+    <ul>
+      <li><b>Nucleus:</b> Controls cell functions</li>
+      <li><b>Mitochondria:</b> Produces energy (ATP)</li>
+      <li><b>Lysosome:</b> Digests worn-out organelles</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Created by 2nd BSc Biotech Student – Bishop Heber College</p>
+    <div class="dedication">🌸 Dedicated to Praveena 🌸</div>
+    <div class="rubies">🌟 Rubies 🌟</div>
+  </footer>
+
+</body>
+</html>
